@@ -11,12 +11,7 @@ urlpatterns = [
     path('about',include('home.urls')),
     path('services',include('home.urls')),
     path('contact',include('home.urls'))
-  
-    path('admin/', admin.site.urls),
-    path('', include("Home.urls")),
 
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
 
 
